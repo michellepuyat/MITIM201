@@ -5,5 +5,5 @@ function percentage(){
     //PROCESS - divide number of classes attended by the number of classes held
     let percentageOfClassesAttended = classAttended / classHeld;
     //OUTPUT - weight converted in kg
-    document.getElementById('output').innerHTML = kg.toFixed(1) + "%";
+    document.getElementById('output').innerHTML = percentageOfClassesAttended.toFixed(1) + "%";
 }
