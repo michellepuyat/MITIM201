@@ -11,12 +11,20 @@
             <h2>Currency Converter System</h2>
         </header>
         <main>
-            <label>Number of classes held: <input type="text" id="classHeld"></label>
-            <label>Number of classes attended.: <input type="text" id="classAttended"></label>
-            <label><button onclick="percentage()">Percentage of Class Attended</button></label>
+            <select name="currency" id="currency" onchange="changeLabel()">
+                <option value="us">US Dollar to PH Peso</option>
+                <option value="hk">HK Dollar to PH Peso</option>
+                <option value="au">AU Dollar to PH Peso</option>
+                <option value="nz">NZ Dollar to PH Peso</option>
+                <option value="jp">JP Yen to PH Peso</option>
+                <option value="sa">SA Riad (Dinnar) to PH Peso</option>
+                <option value="uk">UK Pound to PH Peso</option>
+            </select>
+            <label>Exchange Rate: </label><input type="text" id="exchangeRate" onkeyup="convert()">
+            <label id="from">US Dollar: </label><input type="text" id="currency1" onkeyup="convert()">
+            <label id="to">PH Peso: </label><input type="text" id="currency2" onkeyup="convert2()">
+
             <hr>
-            <p><span id="output"></span></p>
-            <p><span id="remarks"></span></p>
         </main>
         <footer>
             &copy;2021 &bull; Michelle Angelie B. Puyat &bull; St. Paul University Philippines &bull; MITIM206
